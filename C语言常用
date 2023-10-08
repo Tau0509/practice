@@ -8,3 +8,16 @@ if(i=1){
 }else{
     printf( x);
 }
+素数判断
+int judge(int num){
+    int i,a;
+    for(i=2;i<=(num)/2+1;i++){
+        if(num%i==0){
+            a=0;
+            break;
+        }else{
+            a=1;
+        }
+    }
+    return a;
+}
