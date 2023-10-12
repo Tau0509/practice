@@ -17,7 +17,7 @@ int main(void){
     }else{
         double p;
         p=(l1+l2+l3)/2.0;
-        area=sqrt(p*(p-l1)*(p-l2)*(p-l3));
+        area=sqrt(p*(p-l1)*(p-l2)*(p-l3));//若选取整数值会带来美妙的巧合
         printf("三边长为%lf,%lf,%lf\n",l1,l2,l3);
         printf("此时围成三角形面积为%lf",area);
     }
