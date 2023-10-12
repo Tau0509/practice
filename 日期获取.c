@@ -2,7 +2,7 @@
 int main(void){
     int year,month,day,days;
     int tem,b;
-    scanf("%d-%d-%d",&year,&month,&day);
+    scanf("%d%d%d",&year,&month,&day);
     days=0;
     tem=0;
     for(b=0;b<month;b++){
