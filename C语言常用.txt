@@ -21,3 +21,6 @@ int judge(int num){
     }
     return a;
 }
+
+判断 利用多常量避免赋值
+if('a'==judge)
