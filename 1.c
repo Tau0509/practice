@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main(void){
-    printf("喜欢小许");
+    int a=1;
+    a--? a++:a++;
+    printf("%d",a);
     return 0;
 }
