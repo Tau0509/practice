@@ -9,7 +9,7 @@ int main(){
         if(t==0)
         count++;
         if(t>max)
-        max=t;
+        t=max;
         x=x/10;
     }
     printf("该数有%d个零，最大数字是%d",count,max);
