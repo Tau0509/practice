@@ -22,9 +22,9 @@ void sortArray(int x[],int xSize){
 }
 int findSerials(int x[],int xSize){
     int count=0;
-    for(int i=0;i<=xSize-2;i++){
-        for(int j=i+1;j<=xSize-1;j++){    //变为小于等于，下同
-            for(int k=j+1;k<=xSize;k++){
+    for(int i=0;i<xSize-2;i++){
+        for(int j=i+1;j<xSize-1;j++){    //变为小于等于，下同
+            for(int k=j+1;k<xSize;k++){
                 if((x[i]+x[k])==2*x[j]){
                 count++;
                 printf("(%d,%d,%d)\n",x[i],x[j],x[k]);}
