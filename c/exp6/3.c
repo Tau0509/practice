@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #define N 4
-/*对指针数组 s 指向的 size 个字符串进行升序排序*/
+
 void strsort(char **s, int size)
 {
     char* temp;

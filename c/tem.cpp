@@ -5,7 +5,7 @@
 // 移植作者：krissi <zh@easyx.cn>
 // 发布日期：2012-4-5
 //
-#include <graphics.h>
+#include "graphics.h"
 #include <math.h>
 #include <time.h>
 

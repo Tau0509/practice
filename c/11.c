@@ -1,30 +1,37 @@
 #include<stdio.h>
-void strnCat(char* t, const char* s, int n);
-int main(){
-    char a[12];
-    char b[12];
-    scanf("%s", a);
-    scanf("%s", b);
-    int n;
-    scanf("%d", &n);
-    strnCat(a, b, n);
-    printf("%s",a);
+int judge(int a) {
+	int flag = 1;
+	for (int i = 2; i <= (a/2) ; i++) {
+		if (a % i == 0) {
+			flag = 0;
+			break;
+		}
+	}
+	return flag;
 }
-void strnCat(char* t, const char* s, int n){
-    char* pt = t;
-    const char* ps = s;
-    int count = 0;
-
-    while (*pt!='\0') { 
-        pt++;
+void print(int a) {
+	int flag = 0;
+	for (int i = 2; i <= a ; i++) {
+		for (int j = 2; j <= (a-i) ; j++) {
+			if (judge(j)&&judge(i)){
+				if (a == i + j) {
+					printf("%d=%d+%d\n", a, i, j);
+					flag = 1;
+					break;
+				}
+			}
+			
+		}
+		if (flag)
+			break;
+	}
+}
+int main() {
+	int a;
+	while(scanf("%d", &a)!=EOF){
+	if (a >= 4) {
+		print(a);
+	}
     }
-
-    while (*ps && count < n) { 
-        *pt = *ps;
-        pt++;
-        ps++;
-        count++;
-    }
-
-    *pt = '\0'; 
+		return 0;
 }
